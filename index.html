@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ひとりでつくっている iOS アプリと Web サービスの一覧です。">
+<meta property="og:title" content="takec02 — つくったもの">
+<meta property="og:description" content="ひとりでつくっている iOS アプリと Web サービスの一覧です。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0b0d">
+<title>takec02 — つくったもの</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+
+  <nav class="topbar">
+    <span class="brand"><span class="dot"></span>takec02</span>
+    <a href="https://x.com/takec02_202609" target="_blank" rel="noopener">X ↗</a>
+  </nav>
+
+  <header class="hero">
+    <h1>つくったもの</h1>
+    <div class="hero-sub">
+      <p>ひとりで、iOS アプリと Web サービスをつくっています。</p>
+      <div class="stats">
+        <span><b id="count-live">--</b>公開中</span>
+        <span><b id="count-soon">--</b>準備中</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="filters" role="tablist" aria-label="絞り込み">
+    <button class="chip is-active" data-filter="all">すべて</button>
+    <button class="chip" data-filter="live">公開中</button>
+    <button class="chip" data-filter="soon">準備中</button>
+  </div>
+
+  <!--
+    ▼ 作品を追加するときは <article> を 1 つコピーして書き換えるだけ。
+      data-status   : live（公開中） / soon（準備中）
+      --g           : 上部グラデーション
+      --num         : 番号の色（背景が暗いときは明るい色に）
+      番号は自動で振られます。
+  -->
+  <section class="grid" id="works">
+
+    <article class="card" data-status="live" style="--g:linear-gradient(145deg,#d8d6cf 0%,#bccadd 35%,#4a78b8 100%)">
+      <div class="card-top">
+        <img class="icon" src="icons/yuhitsu.png" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2><a href="https://apps.apple.com/jp/app/id6799386029" target="_blank" rel="noopener">右筆</a><small>ゆうひつ</small></h2>
+        <p>AIが先に読んで、必要なメールだけを届ける。</p>
+        <p class="meta"><a href="https://apps.apple.com/jp/app/id6799386029" target="_blank" rel="noopener">App Store ↗</a>iPhone・iPad・Mac</p>
+      </div>
+    </article>
+
+    <article class="card" data-status="soon" style="--g:linear-gradient(145deg,#6fa5dc 0%,#a6bdd4 55%,#d3d5d6 100%)">
+      <div class="card-top">
+        <img class="icon" src="icons/autask.png" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>オータスク</h2>
+        <p>登録したタスクが、Googleカレンダーに自動で入る。</p>
+        <p class="meta">iPhone　10月公開予定</p>
+      </div>
+    </article>
+
+    <article class="card" data-status="soon" style="--g:linear-gradient(160deg,#5b8def 0%,#2f4c8a 55%,#171c2c 100%);--num:rgba(255,255,255,.75)">
+      <div class="card-top">
+        <img class="icon outlined" src="icons/oyostudy.png" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>応用情報AIサポート</h2>
+        <p>過去問800問、午後の記述式もAIが採点。</p>
+        <p class="meta">iPhone　10月公開予定</p>
+      </div>
+    </article>
+
+    <article class="card" data-status="soon" style="--g:linear-gradient(160deg,#f08a3c 0%,#9a4f22 55%,#2a1a12 100%)">
+      <div class="card-top">
+        <img class="icon outlined" src="icons/kihon.png" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>基本情報AIサポート</h2>
+        <p>基本情報技術者試験の対策を、AIがサポート。</p>
+        <p class="meta">iPhone　11月公開予定</p>
+      </div>
+    </article>
+
+    <article class="card" data-status="live" style="--g:linear-gradient(145deg,#4fc8f0 0%,#3a8fc4 50%,#2a5d8f 100%)">
+      <div class="card-top">
+        <img class="icon free" src="icons/ai-agent.png" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2><a href="https://github.com/takec02/ai-agent-mac" target="_blank" rel="noopener">AIエージェント</a></h2>
+        <p>名前を呼ぶと応える、Macに常駐する音声AI。会話もMacの操作も検索もこなす。</p>
+        <p class="meta"><a href="https://github.com/takec02/ai-agent-mac" target="_blank" rel="noopener">GitHub ↗</a>ソース公開・MIT</p>
+      </div>
+    </article>
+
+    <article class="card" data-status="live" style="--g:linear-gradient(145deg,#ffd23f 0%,#7fb6d9 50%,#1a7fd9 100%)">
+      <div class="card-top">
+        <img class="icon free" src="icons/ikoh.png" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2><a href="https://ikoh.click" target="_blank" rel="noopener">ikoh</a><small>イコー</small></h2>
+        <p>遊びや旅行をプランで登録・紹介するサービス。</p>
+        <p class="meta"><a href="https://ikoh.click" target="_blank" rel="noopener">ikoh.click ↗</a></p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer class="footer">
+    <span class="sign">takec02</span>
+    <a class="pill" href="https://x.com/takec02_202609" target="_blank" rel="noopener">X @takec02_202609 ↗</a>
+  </footer>
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>
