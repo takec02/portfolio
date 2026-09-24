@@ -1,0 +1,18 @@
+:root { color-scheme: light dark; }
+body {
+  font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif;
+  line-height: 1.9; max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+}
+h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+h2 { font-size: 1.05rem; margin-top: 2rem; padding-top: .6rem; border-top: 1px solid rgba(128,128,128,.3); }
+.lead { opacity: .75; margin-top: 0; }
+.updated { font-size: .9rem; opacity: .7; }
+ul { padding-left: 1.2rem; }
+li { margin: .4rem 0; }
+dt { font-weight: 600; margin-top: 1.1rem; }
+dd { margin: .3rem 0 0; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { text-align: left; padding: .35rem .5rem; border-bottom: 1px solid rgba(128,128,128,.3); vertical-align: top; }
+.en { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(128,128,128,.3); opacity: .9; }
+.nav { margin-top: 2.5rem; }
+a { color: inherit; }
