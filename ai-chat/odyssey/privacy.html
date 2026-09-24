@@ -28,14 +28,12 @@
 
 <h2>AIについて</h2>
 <p>
-質問への回答は、<strong>端末の中のAI</strong>が行います。
-Apple Intelligence が使える端末では Apple Intelligence を、使えない端末では
-端末にダウンロードした Google の Gemma モデルを使います。
-どちらも質問と回答が端末の外に出ることはありません。外部のAIサービスは利用していません。
+質問への回答は、<strong>端末の中の Apple Intelligence</strong> が行います。
+質問と回答が端末の外に出ることはありません。外部のAIサービスは利用していません。
 </p>
 <p>
-Gemma を使う端末では、はじめにモデルのファイルを Hugging Face からダウンロードします。
-このとき通信するのはファイルの取得だけで、質問や会話は送りません。
+Apple Intelligence が使えない端末では、AIの代わりに、アプリに収録した資料から
+質問に関係する項目を表示します。このときも通信はしません。
 </p>
 
 <h2>マイクと音声認識、読み上げについて</h2>
@@ -78,8 +76,7 @@ Google による情報の扱いは、Google のポリシーをご覧ください
 
 <h2>端末の中に置かれるもの</h2>
 <ul>
-  <li>AIのモデル（Gemma を使う端末のみ）</li>
-  <li>アプリの設定</li>
+  <li>広告のトラッキングを許可したかどうかなど、アプリと広告の設定</li>
 </ul>
 <p>
 会話の履歴は保存していません。アプリを閉じると消えます。
@@ -103,8 +100,8 @@ Google による情報の扱いは、Google のポリシーをご覧ください
 <h2>English summary</h2>
 <p>
 オデュッセイアAI answers questions about Homer's Odyssey and the Trojan War using an
-<strong>on-device AI</strong> (Apple Intelligence, or Google's Gemma model downloaded to the
-device on unsupported iPhones). Your questions, the AI's answers and your voice never leave
+<strong>on-device AI</strong> (Apple Intelligence). On devices without Apple Intelligence,
+the app shows the bundled reference text instead, also without any network access. Your questions, the AI's answers and your voice never leave
 the device, and the developer runs no servers. Speech input and read-aloud are processed
 on-device. The app is free and shows ads through <strong>Google AdMob</strong>, which may
 collect device identifiers (IDFA, only if you allow tracking), approximate location derived
