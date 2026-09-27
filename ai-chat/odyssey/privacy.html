@@ -10,7 +10,7 @@
 
 <h1>プライバシーポリシー</h1>
 <p class="lead">オデュッセイアAI</p>
-<p class="updated">最終更新日：2026年9月24日</p>
+<p class="updated">最終更新日：2026年9月28日</p>
 
 <p>
 オデュッセイアAIは、<strong>あなたの質問や会話を外へ持ち出しません。</strong>
@@ -39,8 +39,12 @@ Apple Intelligence が使えない端末では、AIの代わりに、アプリ�
 <h2>マイクと音声認識、読み上げについて</h2>
 <p>
 質問を声で入力する機能があります。使うと、その間だけマイクを利用します。
-音声から文字への変換は<strong>端末の中だけ</strong>で行い、音声を外部に送信しません。
-回答の読み上げも端末の中の音声合成で行います。
+音声から文字への変換は、iPhone に組み込まれた Apple の音声認識で行います。
+できるだけ<strong>端末の中</strong>で変換し、端末の中で変換できない場合に限り、
+音声が Apple の音声認識サービスに送られて変換されます。
+音声や変換された文字が開発者に送られることはありません。
+Apple による音声の扱いは、iPhone の <strong>設定 &gt; プライバシーとセキュリティ</strong> などで説明されている Apple のポリシーに従います。
+回答の読み上げは、端末の中の音声合成で行います。
 これらの機能を使わなければ、マイクは一切使いません。
 </p>
 
@@ -102,8 +106,9 @@ Google による情報の扱いは、Google のポリシーをご覧ください
 オデュッセイアAI answers questions about Homer's Odyssey and the Trojan War using an
 <strong>on-device AI</strong> (Apple Intelligence). On devices without Apple Intelligence,
 the app shows the bundled reference text instead, also without any network access. Your questions, the AI's answers and your voice never leave
-the device, and the developer runs no servers. Speech input and read-aloud are processed
-on-device. The app is free and shows ads through <strong>Google AdMob</strong>, which may
+the device, and the developer runs no servers. Speech input is transcribed on-device when possible;
+otherwise the audio is sent to Apple's speech recognition service (never to the developer).
+Read-aloud is processed on-device. The app is free and shows ads through <strong>Google AdMob</strong>, which may
 collect device identifiers (IDFA, only if you allow tracking), approximate location derived
 from the IP address, ad interaction data and diagnostics for advertising and measurement.
 You can change the tracking permission at any time in Settings &gt; Privacy &amp; Security &gt;
