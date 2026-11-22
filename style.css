@@ -43,6 +43,8 @@ a:hover { color: var(--accent); }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: .6rem 1.2rem;
   font-family: var(--mono);
   font-size: .72rem;
   letter-spacing: .16em;
@@ -52,6 +54,7 @@ a:hover { color: var(--accent); }
 .brand { display: flex; align-items: center; gap: .6rem; color: var(--fg); }
 .dot { width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); }
 .topbar a:hover { color: var(--fg); }
+.sns { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 /* ---------- hero ---------- */
 .hero {
@@ -269,6 +272,7 @@ a:hover { color: var(--accent); }
   border-radius: 99px;
   transition: color .2s, border-color .2s, background .2s;
 }
+.pills { display: flex; gap: .6rem; flex-wrap: wrap; }
 .pill:hover { color: #fff; border-color: var(--accent); background: #2a1513; }
 
 @media (prefers-reduced-motion: reduce) {
